@@ -1,0 +1,22 @@
+
+^
+java:S1192J"IDefine a constant instead of duplicating this literal "Ink Free" 3 times.(ËıV
+c
+java:S1192L"HDefine a constant instead of duplicating this literal "Score: " 4 times.(”˜¹Ôşÿÿÿÿ
+E
+java:S2387"*"x" is the name of a field in "Component".(Û·£±ûÿÿÿÿ
+@
+java:S2387"*"y" is the name of a field in "Component".(±ßŒË
+E
+java:S1197"*Move the array designators [] to the type.(Û·£±ûÿÿÿÿ
+@
+java:S1197"*Move the array designators [] to the type.(±ßŒË
+W
+java:S1161*":Add the "@Override" annotation above this method signature(³ıŸê8ÔÌÅŠÖ1
+V	java:S1255"<This block of commented-out lines of code should be removed.(ĞÀ’Œúÿÿÿÿ
+A
+java:S1905T"&Remove this unnecessary cast to "int".(åóÒ¯ûÿÿÿÿ
+<
+java:S1905U"&Remove this unnecessary cast to "int".(½Èˆ
+<	java:S131]""Add a default case to this switch.(Æóõµıÿÿÿÿ
+D	java:S131¯""Add a default case to this switch.(ù‚Óøÿÿÿÿ8ï ÆŠÖ1

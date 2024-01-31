@@ -1,3 +1,5 @@
+package game;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -36,10 +38,12 @@ public class GamePanel extends JPanel implements ActionListener {
         timer = new Timer(DELAY, this);
         timer.start();
     }
+
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         draw(g);
     }
+
     public void draw(Graphics g){
 
         if(running){
@@ -75,10 +79,12 @@ public class GamePanel extends JPanel implements ActionListener {
         }
 
     }
+    
     public void newApple(){
         appleX = random.nextInt((int) (SCREEN_WIDTH/UNIT_SIZE))*UNIT_SIZE;
         appleY = random.nextInt((int) (SCREEN_HEIGHT/UNIT_SIZE))*UNIT_SIZE;
     }
+
     public void move(){
         for(int i = bodyParts; i>0; i--){
             x[i] = x[i-1];
@@ -99,6 +105,7 @@ public class GamePanel extends JPanel implements ActionListener {
                 break;
         }
     }
+
     public void checkApple(){
         if((x[0] == appleX) && (y[0] == appleY)){
             bodyParts++;
@@ -106,6 +113,7 @@ public class GamePanel extends JPanel implements ActionListener {
             newApple();
         }
     }
+
     public void checkCollisions(){
         // checks if head collides with body
         for(int i = bodyParts; i>0; i--){
@@ -134,7 +142,8 @@ public class GamePanel extends JPanel implements ActionListener {
         }
 
     }
-    public void gameOver(Graphics g){
+
+    public void gameOver( Graphics g){
         // Draw the score in the screen
         g.setColor(Color.CYAN);
         g.setFont(new Font("Ink Free", Font.BOLD, 40));
@@ -158,8 +167,6 @@ public class GamePanel extends JPanel implements ActionListener {
         }
         repaint();
     }
-
-
 
     public class MyKeyAdapter extends KeyAdapter{
         @Override
